@@ -1,0 +1,54 @@
+{
+  "name": "lazy-pulse",
+  "version": "1.0.0",
+  "description": "Lazy-loading audit for static sites: below-the-fold images and iframes missing loading=lazy, and LCP candidates (hero images, first images) wrongly lazy-loaded or deprioritised. SARIF, Action. Zero deps.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "lazy-pulse": "bin/lazy-pulse.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "action.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "lazy-loading",
+    "loading-lazy",
+    "lcp",
+    "performance",
+    "web-performance",
+    "core-web-vitals",
+    "images",
+    "static-site",
+    "sarif",
+    "github-action"
+  ],
+  "author": "Louis Wright <hello@louiswright.co.uk> (https://github.com/MrLouisWright)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLouisWright/lazy-pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrLouisWright/lazy-pulse/issues"
+  },
+  "homepage": "https://github.com/MrLouisWright/lazy-pulse#readme"
+}
