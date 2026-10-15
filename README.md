@@ -1,5 +1,7 @@
 # lazy-pulse
 
+[![npm version](https://img.shields.io/npm/v/lazy-pulse.svg)](https://www.npmjs.com/package/lazy-pulse) [![CI](https://github.com/MrLouisWright/lazy-pulse/actions/workflows/ci.yml/badge.svg)](https://github.com/MrLouisWright/lazy-pulse/actions/workflows/ci.yml) [![Node](https://img.shields.io/node/v/lazy-pulse.svg)](https://nodejs.org) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > Lazy-load what is below the fold, never the LCP image: a static lazy-loading audit for your built site.
 
 Native `loading="lazy"` is one attribute, and it is easy to get wrong in both directions: galleries and embeds below the fold download eagerly, while a template applies `loading="lazy"` (or a `data-src` library) to the hero image and pushes back Largest Contentful Paint. `lazy-pulse` reads your built HTML, picks the likely LCP image on each page, and checks every image and iframe against where it sits in the document.
