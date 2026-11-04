@@ -166,12 +166,20 @@ The action runs the bundled CLI with Node 20; it has no dependencies to install.
 
 ## Library
 
+Install it in your project first:
+
+```bash
+npm install --save-dev lazy-pulse
+```
+
 ```js
 import { check, parseHtml, mediaOf, lcpCandidate } from "lazy-pulse";
 const doc = parseHtml(html);
 lcpCandidate(doc, mediaOf(doc))?.el.attrs.src;
 check("dist", { foldImages: 2 }).findings;
 ```
+
+The package is ESM-only (there is no CommonJS build): use `import`, or `await import("lazy-pulse")` from CommonJS.
 
 Types are included.
 
